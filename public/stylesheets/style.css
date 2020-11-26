@@ -72,3 +72,8 @@ header{
   position: absolute;
 
 }
+.form-control{
+  width: 30%;
+  height: auto;
+  background-color: red;
+}
