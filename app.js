@@ -24,7 +24,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 db.connect((err)=>{
   if(err) console.log("dataBase connection error"+err)
-  else console.log("dataBase connected successflly");
+  else console.log("dataBase connected successfully");
 
 })
 

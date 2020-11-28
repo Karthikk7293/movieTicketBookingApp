@@ -1,19 +1,27 @@
-<header>
+<header id="header" >
         <div class="raw">
-            <div class="col-md-2">
+            <div class="col-md-3 col-2">
                 <h3 class="logo">logo</h3>
                 <h5 class="bg-info">admin</h5>
             </div>
-            <div class="col-md-8">
+            <div class="col-md-6 col-6 ">
                 <nav class="navbar navbar-light">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" id="search" type="search" placeholder="Search Movies" aria-label="Search">
-
+                    <form class="form-inline" method="POST"  action="/admin/search"  >
+                        <input class="form-control mr-sm-2" id="search" type="search" name="content" placeholder="Search theatre" aria-label="Search">
+                        <button type="submit" class="btn btn-light">search</button>
                     </form>
                 </nav>
             </div>
-            <div class="col-md-2">
-                <a href="#" class="btn btn-light" >Logout</a>
+            <div class="col-md-3 col-2">
+                <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{response.admin.name}}
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="/admin/logout">logout</a>
+    
+  </div>
+</div>
 
             </div>
         </div>
